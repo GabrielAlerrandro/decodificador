@@ -1,0 +1,152 @@
+:root {
+    --buttonColor: #F36767;
+    --backgroundColor: #FFAFB8;
+    --tituloColor: #EFE9E2;
+    --tituloBack: #FFAFB8;
+    --boxBack: #EFE9E2;
+    --bottonPlace: #EFE9E2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "MontSerrat", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+
+html,
+body {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    background-color: var(--backgroundColor);
+}
+
+.titulo {
+    color: var(--tituloColor);
+    text-align: center;
+    background-color: var(--tituloBack);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    border: none;
+    background-color: var(--boxBack);
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 24px;
+    text-transform: lowercase;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+.box::placeholder {
+    color: rgb(136, 122, 122, 0.5);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+textarea {
+    color: #887A7A;
+    resize: none;
+}
+
+ion-icon {
+    color: white;
+    width: 20px;
+}
+
+#warn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-weight: bold;
+    color: rgb(255, 255, 255, 1.2);
+    font-size: 12px;
+}
+
+.btn-pai {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn {
+    background: linear-gradient(var(--backgroundColor), var(--buttonColor));
+    margin: 10px;
+    padding: 15px 35px;
+    text-align: center;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 90px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 1s;
+    border-color: rgb(136, 122, 122, 0.5);
+
+}
+
+.btn:hover {
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+
+footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--backgroundColor);
+    color: #ffffff;
+    margin: 2px;
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .btn-pai {
+        margin-top: 10px;
+    }
+
+    .box {
+        width: 350px;
+        height: 210px;
+        font-size: 20px;
+    }
+
+    .box::placeholder {
+        font-size: 20px;
+    }
+
+}
